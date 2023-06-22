@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     width: 50,
     height: "100%",
     backgroundColor: COLORS.tertiary,
-    borderRadius: SIZES.medium,
+    borderRadius: 16,
     justifyContent: "center",
     alignItems: "center",
   },
@@ -62,6 +62,7 @@ const styles = StyleSheet.create({
     borderRadius: SIZES.medium,
     borderWidth: 1,
     borderColor: activeJobType === item ? COLORS.secondary : COLORS.gray2,
+    
   }),
   tabText: (activeJobType, item) => ({
     fontFamily: FONT.medium,

@@ -21,8 +21,8 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
   return (
     <View>
       <View style={styles.container}>
-        <Text style={styles.userName}>Hello Willie</Text>
-        <Text style={styles.welcomeMessage}>Find your perfect job</Text>
+        <Text style={styles.userName}>Hello,</Text>
+        <Text style={styles.welcomeMessage}>Find your web3 Jobs</Text>
       </View>
 
       <View style={styles.searchContainer}>
@@ -37,7 +37,20 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
           />
         </View>
 
-        <TouchableOpacity style={styles.searchBtn} onPress={handleClick}>
+        <TouchableOpacity
+          style={{
+            width: 50,
+            height: "100%",
+            // backgroundColor: "transparent",
+            // backgroundImage:
+            //   "linear-gradient(to right, #6366F1, #9F7AEA, #F472B6)",
+            backgroundColor: "black",
+            borderRadius: SIZES.medium,
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          onPress={handleClick}
+        >
           <Image
             source={icons.search}
             resizeMode="contain"

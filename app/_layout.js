@@ -6,6 +6,7 @@ import * as SplashScreen from "expo-splash-screen";
 
 SplashScreen.preventAutoHideAsync();
 
+//defining custom layout, fonts , and splash screen
 const Layout = () => {
   const [fontsLoaded] = useFonts({
     DMBold: require("../assets/fonts/DMSans-Bold.ttf"),
@@ -15,6 +16,7 @@ const Layout = () => {
 
   const onLayoutRootView = useCallback(async () => {
     if (fontsLoaded) {
+      //only font loaded splash screen hidden
       await SplashScreen.hideAsync();
     }
   }, [fontsLoaded]);

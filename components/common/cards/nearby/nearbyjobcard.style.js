@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
   logoImage: {
     width: "70%",
     height: "70%",
+    borderRadius: 50
   },
   textContainer: {
     flex: 1,

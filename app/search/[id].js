@@ -26,7 +26,8 @@ const JobSearch = () => {
   const handleSearch = async () => {
     setSearchLoader(true);
     setSearchResult([]);
-
+    
+    //api called for job search
     try {
       const options = {
         method: "GET",
@@ -40,17 +41,19 @@ const JobSearch = () => {
           page: page.toString(),
         },
       };
-
+      // api successful setSearchResult added to useState
       const response = await axios.request(options);
       setSearchResult(response.data.data);
     } catch (error) {
       setSearchError(error);
       console.log(error);
     } finally {
+      // loadeder default false
       setSearchLoader(false);
     }
   };
-
+ 
+  // pagination function
   const handlePagination = (direction) => {
     if (direction === "left" && page > 1) {
       setPage(page - 1);
@@ -60,7 +63,7 @@ const JobSearch = () => {
       handleSearch();
     }
   };
-
+  // useEffect change if Handlesearch
   useEffect(() => {
     handleSearch();
   }, []);

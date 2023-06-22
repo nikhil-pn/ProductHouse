@@ -1,5 +1,6 @@
-import profile from "../assets/images/kemal.jpg";
+import profile from "../assets/images/linkedin_logo.jpg";
+import job from "../assets/images/productHouse_logo.jpg"
 
 export default {
-  profile,
+  profile,job
 };

@@ -6,30 +6,46 @@ import { checkImageURL } from "../../../../utils";
 
 import { images } from "../../../../constants";
 
+// import { COLORS, icons, images, SIZES } from "../constants";
+
 const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
   return (
-    <TouchableOpacity 
+    <TouchableOpacity
       style={styles.container(selectedJob, item)}
       onPress={() => handleCardPress(item)}
-      >
-        <TouchableOpacity style={styles.logoContainer(selectedJob, item)}>
-          <Image
-            source={checkImageURL(item.employer_logo) ? { uri: item.employer_logo} : images.job}
-            resizeMode="contain"
-            style={styles.logoImage}
-          />
+    >
+      <TouchableOpacity style={styles.logoContainer(selectedJob, item)}>
+        {/* <Image
+          source={
+            checkImageURL(item.employer_logo)
+              ? { uri: item.employer_logo }
+              : "../../../../assets/images/productHouse_logo.jpg"
+          }
+          resizeMode="contain"
+          // style={{ width: "70%", height: "70%", borderRadius: 50 }}
+        /> */}
+        <Image
+          source={
+            checkImageURL(item.employer_logo)
+              ? { uri: item.employer_logo }
+              : images.job
+          }
+          resizeMode="contain"
+          style={styles.logoImage}
+        />
+      </TouchableOpacity>
+      <Text style={styles.companyName} numberOfLines={1}>
+        {item.employer_name}
+      </Text>
 
-        </TouchableOpacity>
-        <Text style={styles.companyName} numberOfLines={1}>{item.employer_name}</Text>
-
-        <View style={styles.infoContainer}>
-          <Text style={styles.jobName(selectedJob, item)} numberOfLines={1}>
-            {item.job_title}
-          </Text>
-          <Text style={styles.location}>{item.job_country}</Text>
-        </View>
+      <View style={styles.infoContainer}>
+        <Text style={styles.jobName(selectedJob, item)} numberOfLines={1}>
+          {item.job_title}
+        </Text>
+        <Text style={styles.location}>{item.job_country}</Text>
+      </View>
     </TouchableOpacity>
-  )
-}
+  );
+};
 
-export default PopularJobCard
+export default PopularJobCard;

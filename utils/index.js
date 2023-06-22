@@ -1,3 +1,4 @@
+//utlis func for checkImgaeURL is available
 export const checkImageURL = (url) => {
   if (!url) return false;
   else {

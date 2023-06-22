@@ -6,7 +6,11 @@ const styles = StyleSheet.create({
   container: (selectedJob, item) => ({
     width: 250,
     padding: SIZES.xLarge,
-    backgroundColor: selectedJob === item.job_id ? COLORS.primary : "#FFF",
+    // backgroundColor: "transparent",
+    backgroundColor:
+      selectedJob === item.job_id
+        ? "black"
+        : "#FFF",
     borderRadius: SIZES.medium,
     justifyContent: "space-between",
     ...SHADOWS.medium,
@@ -23,6 +27,7 @@ const styles = StyleSheet.create({
   logoImage: {
     width: "70%",
     height: "70%",
+    borderRadius: 50
   },
   companyName: {
     fontSize: SIZES.medium,

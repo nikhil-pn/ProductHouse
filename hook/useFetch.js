@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
+//custom useFetch hook created
 const useFetch = (endpoint, query) => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-
+  
+  //options
   const options = {
     method: "GET",
     url: `https://jsearch.p.rapidapi.com/${endpoint}`,
@@ -15,13 +17,13 @@ const useFetch = (endpoint, query) => {
     },
     params: { ...query },
   };
-
+  
+  //fetch data functions
   const fetchData = async () => {
     setIsLoading(true);
 
     try {
       const response = await axios.request(options);
-
       setData(response.data.data);
       setIsLoading(false);
     } catch (error) {
@@ -31,11 +33,13 @@ const useFetch = (endpoint, query) => {
       setIsLoading(false);
     }
   };
-
+ 
+  //useEffect function to fetch data 
   useEffect(() => {
-    fetchData();
+    // fetchData();  
   }, []);
-
+ 
+  //refetch data functions
   const refetch = () => {
     setIsLoading(true);
     fetchData();

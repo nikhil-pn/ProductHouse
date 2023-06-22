@@ -10,12 +10,14 @@ import {
   Welcome,
 } from "../components";
 
+//home page default main component
 const Home = () => {
   const router = useRouter();
   const [searchTerm, setSearchTerm] = useState("");
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
+      {/* Left and Right button navigation */}
       <Stack.Screen
         options={{
           headerStyle: { backgroundColor: COLORS.lightWhite },
@@ -26,6 +28,7 @@ const Home = () => {
           headerRight: () => (
             <ScreenHeaderBtn iconUrl={images.profile} dimension="80%" />
           ),
+          //empty title hidden 
           headerTitle: "",
         }}
       />
@@ -38,6 +41,7 @@ const Home = () => {
           }}
         >
           <Welcome
+            // search component passing all props & using router to route to search result page
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
             handleClick={() => {
@@ -46,6 +50,7 @@ const Home = () => {
               }
             }}
           />
+          {/* popularjobs, nearbyJob component, add more if needed */}
           <Popularjobs />
           <Nearbyjobs />
         </View>
