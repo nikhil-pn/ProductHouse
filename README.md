@@ -56,7 +56,7 @@
 ### :camera: Screenshots
 
 <div align="center" display='flex'>
-<img width='400rem'  src='https://github.com/nikhil-pn/FloatingScooter/blob/main/demo/homescreen.jpeg' alt='image'/>
+<img width='400rem'  src='https://github.com/nikhil-pn/ProductHouse/blob/main/demo/screenshot.jpeg' alt='image'/>
 </div>
 
 <!-- <div align="center" display="flex">
