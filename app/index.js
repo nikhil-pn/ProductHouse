@@ -18,7 +18,7 @@ const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: "black" }}>
       {/* Left and Right button navigation */}
       {/* <Stack.Screen
         options={{

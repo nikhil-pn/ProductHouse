@@ -48,6 +48,8 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
             borderRadius: SIZES.medium,
             justifyContent: "center",
             alignItems: "center",
+            borderColor: "white",
+            borderWidth: 3
           }}
           onPress={handleClick}
         >

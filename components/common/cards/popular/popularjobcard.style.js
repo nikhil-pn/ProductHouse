@@ -7,10 +7,10 @@ const styles = StyleSheet.create({
     width: 250,
     padding: SIZES.xLarge,
     // backgroundColor: "transparent",
-    backgroundColor:
+    background:
       selectedJob === item.job_id
-        ? "black"
-        : "#FFF",
+        ? "linear-gradient(to right, #A65BD1, #592356);"
+        : "black",
     borderRadius: SIZES.medium,
     justifyContent: "space-between",
     ...SHADOWS.medium,

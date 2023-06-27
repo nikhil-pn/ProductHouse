@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     padding: SIZES.medium,
     borderRadius: SIZES.small,
-    backgroundColor: "#FFF",
+    backgroundColor: "black",
     ...SHADOWS.medium,
     shadowColor: COLORS.white,
   },
