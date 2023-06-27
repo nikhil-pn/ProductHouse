@@ -5,6 +5,12 @@
       "bundler": "metro"
     },
     "name": "ProductHouse",
-    "slug": "ProductHouse"
+    "slug": "ProductHouse",
+    "icon": "./assets/images/productHouse_logo.jpg",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "black"
+    }
   }
 }

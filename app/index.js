@@ -9,6 +9,8 @@ import {
   ScreenHeaderBtn,
   Welcome,
 } from "../components";
+import { Image } from "react-native";
+import Navbar from "../screen/Navbar";
 
 //home page default main component
 const Home = () => {
@@ -18,21 +20,28 @@ const Home = () => {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
       {/* Left and Right button navigation */}
-      <Stack.Screen
+      {/* <Stack.Screen
         options={{
           headerStyle: { backgroundColor: COLORS.lightWhite },
           headerShadowVisible: false,
           headerLeft: () => (
-            <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
+            <>
+              <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
+              <Image  style={{width: 50, height: 50 , resizeMode: "contain", alignSelf: "center"}} source={require("../assets/tph.png")}></Image>
+            </>
           ),
+         
+          
           headerRight: () => (
             <ScreenHeaderBtn iconUrl={images.profile} dimension="80%" />
           ),
-          //empty title hidden 
+          //empty title hidden
           headerTitle: "",
         }}
-      />
-
+      /> */}
+      <Stack.Screen options={{ headerShown: false }} />
+      <Navbar></Navbar>
+      
       <ScrollView showsVerticalScrollIndicator={false}>
         <View
           style={{
