@@ -36,7 +36,7 @@ const useFetch = (endpoint, query) => {
  
   //useEffect function to fetch data 
   useEffect(() => {
-    // fetchData();  
+    fetchData();  
   }, []);
  
   //refetch data functions

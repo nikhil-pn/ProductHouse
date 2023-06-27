@@ -59,16 +59,16 @@
 <img width='400rem'  src='https://github.com/nikhil-pn/FloatingScooter/blob/main/demo/homescreen.jpeg' alt='image'/>
 </div>
 
-<div align="center" display="flex">
+<!-- <div align="center" display="flex">
 <a _target="blank" href="https://screenshotflow.com/?open=1yK7QvQPO7APloNP9WdxIfEXfr9g-KjGU">View the FlowChart for the APP here</a>
 </div>
 
 <div align="center" display='flex'>
 
 <img width='600rem'   src='https://github.com/nikhil-pn/FloatingScooter/blob/main/demo/flowchart.png' alt='image'/>
-</div>
+</div> -->
 
-## Watch Demo Video on Youtube 🎥<a target="_blank" href=' https://www.youtube.com/shorts/-6y7DtuBcJ4'>https://www.youtube.com/shorts/-6y7DtuBcJ4</a>
+## Watch Demo Video on Youtube 🎥<a target="_blank" href='https://youtu.be/p1AHYaB3hQ4'>https://youtu.be/p1AHYaB3hQ4</a>
 
 <br />
 
